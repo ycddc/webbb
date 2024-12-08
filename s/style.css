@@ -1,0 +1,60 @@
+.total{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin: 200px;
+}
+
+.text_box{
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  .blink {
+    animation: blink 0.5s infinite;
+    font-size: 4rem;
+  }
+  
+  .text_box2{
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.btncs{
+    padding: 100px;
+    display:flex;
+    justify-content: center;
+}
+
+.btn{
+    color: white;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'SF-pro';
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* 화면 너비가 768px 이하인 경우에만 적용되는 스타일 */
+    body {
+      background-color: blue;
+    }
+
+    .total{
+      text-align: center;
+    }
+
+  }

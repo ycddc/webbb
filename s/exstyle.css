@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/namu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.toplogo{
+    color: #ffffff;
+    font-weight: 800;
+    padding: 10px;
+}
+
+ul, ol, a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+.nav{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.submenu{
+    display: none;
+}
+
+.navi:hover .submenu{
+    display: block;
+}
+
+.navi{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.submenu{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    /* 화면 너비가 768px 이하인 경우에만 적용되는 스타일 */
+    .container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/drunk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+  }
